@@ -1,0 +1,45 @@
+#define _1MMDDHHMMI_FILE_INDEX_    1010309143 (3C381817)
+(0064)	Line 100: 	LOGGER_DEBUG("1debug" , 0);
+(006D)	Line 109: 	LOGGER_INFO("1[BLE]cmd req upload type %d, flag %d, ch %d", uploadDataType, uploadDataFlag, uploadInterface);
+(0073)	Line 115: 	LOGGER_WARNING("1[BLE]cmd req upload type %d, flag %d, ch %d", uploadDataType, uploadDataFlag, uploadInterface);
+(007B)	Line 123: 	LOGGER_ERROR("1[BLE]ERR:Rx Buffer full(%d)", len);
+	
+	
+#define _1MMDDHHMMI_FILE_INDEX_    1010309142 (3C381816)
+(049F)	Line 1183: 	LOGGER_DEBUG("2debug is good" , 0);
+(04A8)	Line 1192: 	LOGGER_INFO("2[BLE]cmd req upload type %d, flag %d, ch %d", uploadDataType, uploadDataFlag, uploadInterface);
+(04AE)	Line 1198: 	LOGGER_WARNING("2[BLE]cmd req upload type %d, flag %d, ch %d", uploadDataType, uploadDataFlag, uploadInterface);
+(04B6)	Line 1206: 	LOGGER_ERROR("2[BLE]ERR:Rx Buffer full(%d)", len);
+	
+#define _1MMDDHHMMI_FILE_INDEX_    1010309140 (3C381814)
+(049D)	Line 1181: 	LOGGER_DEBUG("3debug" , 0);
+(04A6)	Line 1190: 	LOGGER_INFO("3[BLE]cmd req upload type %d, flag %d, ch %d", uploadDataType, uploadDataFlag, uploadInterface);
+(04AC)	Line 1196: 	LOGGER_WARNING("3[BLE]cmd req upload type %d, flag %d, ch %d", uploadDataType, uploadDataFlag, uploadInterface);
+(04B4)	Line 1204: 	LOGGER_ERROR("3[BLE]ERR:Rx Buffer full(%d)", len);
+	
+
+//// valid patterns start //////
+D[3C381817,0064] 
+I[3C381817,006D] 100 12 100000
+W[3C381817,0073] 21 22 23
+E[3C381817,007B] 1
+
+D[3C381816,049F] 
+I[3C381816,006D] 101 13 100004
+W[3C381816,04A8] 25 26 27
+E[3C381816,04B6] 2
+
+D[3C381814,049D] 
+I[3C381814,04A6] 102 14 100005
+W[3C381814,04AC] 28 29 30
+E[3C381814,04B4] 3
+//// valid patterns end //////
+
+I am noise.
+It is not important.
+
+00> I[3C381816,04A8]
+I[> I[3C381814,04B4] not valid
+
+[#@#$%AB] 77 88 99 100
+

@@ -1,0 +1,46 @@
+{
+    "configurations": [
+        {
+            "name": "embedded",
+            "includePath": [                
+                "${workspaceFolder}/../modules/nrfx/mdk/*",                
+                "${workspaceFolder}/../components/*",
+                "${workspaceFolder}/../components/ble/ble_advertising/*",
+                "${workspaceFolder}/../components/ble/ble_dtm/*",
+                "${workspaceFolder}/../components/ble/ble_link_ctx_manager/*",
+                "${workspaceFolder}/../components/ble/ble_racp/*",
+                "${workspaceFolder}/../components/ble/ble_services/ble_ancs_c/*",
+                "${workspaceFolder}/../components/ble/ble_services/ble_ans_c/*",
+                "${workspaceFolder}/../components/ble/ble_services/ble_bas/*",
+                "${workspaceFolder}/../components/ble/ble_services/ble_bas_c/*",
+                "${workspaceFolder}/../components/ble/ble_services/ble_cscs/*",
+                "${workspaceFolder}/../components/ble/ble_services/ble_cts_c/*",
+                "${workspaceFolder}/../components/ble/ble_services/ble_dfu/*",
+                "${workspaceFolder}/../components/ble/ble_services/ble_dis/*",
+                "${workspaceFolder}/../components/ble/ble_services/ble_gls/*",
+                "${workspaceFolder}/../components/ble/ble_services/ble_hids/*",
+                "${workspaceFolder}/../components/ble/ble_services/ble_hrs/*",
+                "${workspaceFolder}/../components/ble/ble_services/ble_hrs_c/*",
+                "${workspaceFolder}/../components/ble/ble_services/ble_hts/*",
+                "${workspaceFolder}/../components/ble/ble_services/ble_ias/*",
+                "${workspaceFolder}/../components/ble/ble_services/ble_ias_c/*",
+                "${workspaceFolder}/../components/ble/ble_services/ble_lbs/*",
+                "${workspaceFolder}/../components/ble/ble_services/ble_lbs_c/*",
+                "${workspaceFolder}/../components/ble/ble_services/ble_lls/*",
+                "${workspaceFolder}/../components/ble/ble_services/ble_nus/*",
+                "${workspaceFolder}/../components/ble/ble_services/ble_nus_c/*",
+                "${workspaceFolder}/../components/ble/ble_services/ble_rscs/*",
+                "${workspaceFolder}/../components/ble/ble_services/ble_rscs_c/*",
+                "${workspaceFolder}/../components/ble/ble_services/ble_tps/*",
+                "${workspaceFolder}/source/app/*"
+            ],
+            "macFrameworkPath": [
+            ],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}

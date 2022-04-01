@@ -1,0 +1,4 @@
+C:\Users\TeleMart\Desktop\upwork\development\level 1a.c
+C:\Users\TeleMart\Desktop\upwork\development\.vscode\level 2a.c
+C:\Users\TeleMart\Desktop\upwork\development\binary\level 2a.c
+C:\Users\TeleMart\Desktop\upwork\development\source\app\battery.c

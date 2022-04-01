@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "nrf_drv_gpiote.h": "c",
+        "nrfx_gpiote.h": "c",
+        "nrfx.h": "c",
+        "nrfx_config.h": "c",
+        "sdk_config.h": "c",
+        "nrf_gpiote.h": "c",
+        "nordic_common.h": "c",
+        "nrf_drv_pwm.h": "c",
+        "nrfx_pwm.h": "c",
+        "nrf_pwm.h": "c",
+        "nrfx_glue.h": "c",
+        "nrfx_common.h": "c",
+        "nrf.h": "c",
+        "stdint.h": "c",
+    },
+    "editor.detectIndentation": false
+}
