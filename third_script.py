@@ -39,7 +39,14 @@ def lookup_for_file_index():
                             find_string_re = re.compile(r'"(.+?)"')
                             try:
                                 found_string = re.search(find_string_re, line).group(0)
-                                new_list_for_file.append([decoded_hex[0], decoded_hex[1], found_string])
+                                if '%d' in found_string:
+                                    try:
+                                        list_to_replace = [decoded_hex[2], decoded_hex[3], decoded_hex[4]]
+                                    except IndexError:
+                                        list_to_replace = [decoded_hex[2]]
+                                    for i in range(0, line.count('%d')):
+                                        found_string = found_string.replace('%d', list_to_replace[i], 1)
+                                    new_list_for_file.append([decoded_hex[0], decoded_hex[1], found_string])
                             except AttributeError:
                                 continue
 
@@ -73,7 +80,11 @@ def parse_replacement_text_file(file_name):
         integer = hexed[2:10]
         line_number = hexed[11:15]
         if "printf" in hexed:
-            decoded_hex_list.append([int(integer, 16), int(line_number, 16), 'printf'])
+            hexed_list = hexed.split(" ")
+            try:
+                decoded_hex_list.append([int(integer, 16), int(line_number, 16), hexed_list[1], hexed_list[2], hexed_list[3], 'printf'])
+            except IndexError:
+                decoded_hex_list.append([int(integer, 16), int(line_number, 16), hexed_list[1], 'printf'])
         else:
             decoded_hex_list.append([int(integer, 16), int(line_number, 16)])
     print(f"Decoded hex list: {decoded_hex_list}")
